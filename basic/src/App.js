@@ -1,6 +1,11 @@
+import Rk from "./Ronak.jsx"
+
 function App() {
   return (
-    <h1>Ronak's World</h1>
+    <>
+    <Rk />
+    <h2>Ronak's World</h2>
+    </>
   );
 }
 
