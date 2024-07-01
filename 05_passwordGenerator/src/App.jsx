@@ -29,6 +29,7 @@ function App() {
     passwordRef.current?.select();
     passwordRef.current?.setSelectionRange(0,100)
     window.navigator.clipboard.writeText(password)
+    document.getElementById("copy").innerHTML = "Copied!!"
   }, [password])
 
   useEffect(() => {
@@ -46,7 +47,7 @@ function App() {
         placeholder='password'
         ref={passwordRef}
         readOnly/>
-        <button onClick={copyPasswordToClipboard} className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0 hover:bg-white text-black'>Copy</button>
+        <button onClick={copyPasswordToClipboard} className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0' id='copy'>Copy</button>
         </div>
         <div className='flex text-sm gap-x-2'>
         <div className='flex item-center gap-x-1'>
