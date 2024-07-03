@@ -9,10 +9,7 @@ function App() {
   const[to, setTo] = useState('inr')
   const [convertedAmount, setconvertedAmount] = useState(0)
 
-  console.log(from);
-  console.log(useCurrencyInfo('usa'));
   const currencyInfo = useCurrencyInfo(from)
-  console.log(currencyInfo);
 
   const options = Object.keys(currencyInfo)
 
